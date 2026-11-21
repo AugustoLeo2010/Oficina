@@ -3,7 +3,7 @@ package _DT.Oficina.entities;
 import jakarta.persistence.*;
 
 @Entity
-public class Veiculo {
+public class Vehicle {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String modelo;
@@ -13,7 +13,7 @@ public class Veiculo {
     private String tipo;
     private double kmr;
 
-    public Veiculo(int id, String modelo, String marca, String cor, String ano, String tipo, double kmr){
+    public Vehicle(int id, String modelo, String marca, String cor, String ano, String tipo, double kmr){
         this.id = id;
         this.modelo = modelo;
         this.marca = marca;
@@ -22,7 +22,7 @@ public class Veiculo {
         this.tipo = tipo;
         this.kmr = kmr;
     }
-    public Veiculo(String modelo, String marca, String cor, String ano, String tipo, double krm){
+    public Vehicle(String modelo, String marca, String cor, String ano, String tipo, double krm){
         this.modelo = modelo;
         this.marca = marca;
         this.ano = ano;
@@ -30,7 +30,7 @@ public class Veiculo {
         this.kmr = kmr;
     }
 
-    public Veiculo(){
+    public Vehicle(){
     }
 
     public int getId() {

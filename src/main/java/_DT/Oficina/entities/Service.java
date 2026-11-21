@@ -3,7 +3,7 @@ package _DT.Oficina.entities;
 import jakarta.persistence.*;
 
 @Entity
-public class Servico {
+public class Service {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nome;
@@ -11,21 +11,21 @@ public class Servico {
     private Double valor;
     private String descricao;
 
-    public Servico(int id, String nome, String tipo, Double valor, String descricao){
+    public Service(int id, String nome, String tipo, Double valor, String descricao){
         this.id = id;
         this.nome = nome;
         this.tipo = tipo;
         this.valor = valor;
         this.descricao = descricao;
     }
-    public Servico(String nome, String tipo, Double valor, String descricao){
+    public Service(String nome, String tipo, Double valor, String descricao){
         this.nome = nome;
         this.tipo = tipo;
         this.valor = valor;
         this.descricao = descricao;
     }
 
-    public Servico(){
+    public Service(){
     }
 
     public int getId() {

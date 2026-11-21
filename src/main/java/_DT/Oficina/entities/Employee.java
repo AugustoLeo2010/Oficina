@@ -3,29 +3,32 @@ package _DT.Oficina.entities;
 import jakarta.persistence.*;
 
 @Entity
-public class OrdemServico {
+public class Employee {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    private double salario;
     private String nome;
     private String cpf;
     private String telefone;
     private String email;
 
-    public OrdemServico(int id, String nome, String cpf, String telefone, String email){
+    public Employee(int id, int salario, String nome, String cpf, String telefone, String email){
         this.id = id;
+        this.salario = salario;
         this.nome = nome;
         this.cpf = cpf;
         this.telefone = telefone;
         this.email = email;
     }
-    public OrdemServico(String nome, String cpf, String telefone, String email){
+    public Employee(int salario, String nome, String cpf, String telefone, String email){
+        this.salario = salario;
         this.nome = nome;
         this.cpf = cpf;
         this.telefone = telefone;
         this.email = email;
     }
 
-    public OrdemServico(){
+    public Employee(){
     }
 
     public int getId() {
@@ -34,6 +37,14 @@ public class OrdemServico {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+
+    public void serSalario(double salario) {
+        this.salario = salario;
     }
 
     public String getNome() {

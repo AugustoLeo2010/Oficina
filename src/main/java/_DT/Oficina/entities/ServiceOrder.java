@@ -3,7 +3,7 @@ package _DT.Oficina.entities;
 import jakarta.persistence.*;
 
 @Entity
-public class Cliente {
+public class ServiceOrder {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nome;
@@ -11,21 +11,21 @@ public class Cliente {
     private String telefone;
     private String email;
 
-    public Cliente(int id, String nome, String cpf, String telefone, String email){
+    public ServiceOrder(int id, String nome, String cpf, String telefone, String email){
         this.id = id;
         this.nome = nome;
         this.cpf = cpf;
         this.telefone = telefone;
         this.email = email;
     }
-    public Cliente(String nome, String cpf, String telefone, String email){
+    public ServiceOrder(String nome, String cpf, String telefone, String email){
         this.nome = nome;
         this.cpf = cpf;
         this.telefone = telefone;
         this.email = email;
     }
 
-    public Cliente(){
+    public ServiceOrder(){
     }
 
     public int getId() {
