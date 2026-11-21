@@ -1,6 +1,9 @@
 #Project Workshop
 
-this project is made in language Java, HTML, CSS /n
-this project is a work to teacher Atila /n
-this project is a progresses /n
+this project is made in language Java, HTML, CSS
+
+this project is a work to teacher Atila
+
+this project is a progresses
+
 thank you for the atention
