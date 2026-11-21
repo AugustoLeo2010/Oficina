@@ -1,4 +1,4 @@
-#Project Workshop
+#Workshop
 
 this project is made in language Java, HTML, CSS
 
