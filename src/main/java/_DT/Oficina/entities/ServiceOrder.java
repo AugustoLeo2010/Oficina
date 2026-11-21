@@ -6,22 +6,22 @@ import jakarta.persistence.*;
 public class ServiceOrder {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String nome;
+    private String name;
     private String cpf;
-    private String telefone;
+    private String numberPhone;
     private String email;
 
-    public ServiceOrder(int id, String nome, String cpf, String telefone, String email){
+    public ServiceOrder(int id, String name, String cpf, String numberPhone, String email){
         this.id = id;
-        this.nome = nome;
+        this.name = name;
         this.cpf = cpf;
-        this.telefone = telefone;
+        this.numberPhone = numberPhone;
         this.email = email;
     }
-    public ServiceOrder(String nome, String cpf, String telefone, String email){
-        this.nome = nome;
+    public ServiceOrder(String name, String cpf, String numberPhone, String email){
+        this.name = name;
         this.cpf = cpf;
-        this.telefone = telefone;
+        this.numberPhone = numberPhone;
         this.email = email;
     }
 
@@ -36,12 +36,12 @@ public class ServiceOrder {
         this.id = id;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getCpf() {
@@ -52,12 +52,12 @@ public class ServiceOrder {
         this.cpf = cpf;
     }
 
-    public String getTelefone() {
-        return telefone;
+    public String getNumberPhone() {
+        return numberPhone;
     }
 
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
+    public void setNumberPhone(String numberPhone) {
+        this.numberPhone = numberPhone;
     }
 
     public String getEmail() {

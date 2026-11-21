@@ -6,25 +6,25 @@ import jakarta.persistence.*;
 public class Employee {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private double salario;
-    private String nome;
+    private double wage;
+    private String name;
     private String cpf;
-    private String telefone;
+    private String numberPhone;
     private String email;
 
-    public Employee(int id, int salario, String nome, String cpf, String telefone, String email){
+    public Employee(int id, int wage, String name, String cpf, String numberPhone, String email){
         this.id = id;
-        this.salario = salario;
-        this.nome = nome;
+        this.wage = wage;
+        this.name = name;
         this.cpf = cpf;
-        this.telefone = telefone;
+        this.numberPhone = numberPhone;
         this.email = email;
     }
-    public Employee(int salario, String nome, String cpf, String telefone, String email){
-        this.salario = salario;
-        this.nome = nome;
+    public Employee(int wage, String name, String cpf, String numberPhone, String email){
+        this.wage = wage;
+        this.name = name;
         this.cpf = cpf;
-        this.telefone = telefone;
+        this.numberPhone = numberPhone;
         this.email = email;
     }
 
@@ -39,20 +39,20 @@ public class Employee {
         this.id = id;
     }
 
-    public double getSalario() {
-        return salario;
+    public double getWage() {
+        return wage;
     }
 
-    public void serSalario(double salario) {
-        this.salario = salario;
+    public void setWage(double wage) {
+        this.wage = wage;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getCpf() {
@@ -63,12 +63,12 @@ public class Employee {
         this.cpf = cpf;
     }
 
-    public String getTelefone() {
-        return telefone;
+    public String getNumberPhone() {
+        return numberPhone;
     }
 
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
+    public void setNumberPhone(String numberPhone) {
+        this.numberPhone = numberPhone;
     }
 
     public String getEmail() {

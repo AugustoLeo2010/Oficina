@@ -6,27 +6,27 @@ import jakarta.persistence.*;
 public class Vehicle {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String modelo;
+    private String model;
     private String marca;
-    private String cor;
-    private String ano;
-    private String tipo;
+    private String color;
+    private String year;
+    private String type;
     private double kmr;
 
-    public Vehicle(int id, String modelo, String marca, String cor, String ano, String tipo, double kmr){
+    public Vehicle(int id, String model, String marca, String color, String year, String type, double kmr){
         this.id = id;
-        this.modelo = modelo;
+        this.model = model;
         this.marca = marca;
-        this.cor = cor;
-        this.ano = ano;
-        this.tipo = tipo;
+        this.color = color;
+        this.year = year;
+        this.type = type;
         this.kmr = kmr;
     }
-    public Vehicle(String modelo, String marca, String cor, String ano, String tipo, double krm){
-        this.modelo = modelo;
+    public Vehicle(String model, String marca, String color, String year, String type, double kmr){
+        this.model = model;
         this.marca = marca;
-        this.ano = ano;
-        this.tipo = tipo;
+        this.year = year;
+        this.type = type;
         this.kmr = kmr;
     }
 
@@ -41,12 +41,12 @@ public class Vehicle {
         this.id = id;
     }
 
-    public String getModelo() {
-        return modelo;
+    public String getModel() {
+        return model;
     }
 
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
+    public void setModel(String model) {
+        this.model = model;
     }
 
     public String getMarca() {
@@ -57,28 +57,28 @@ public class Vehicle {
         this.marca = marca;
     }
 
-    public String getCor() {
-        return cor;
+    public String getColor() {
+        return color;
     }
 
-    public void setCor(String cor) {
-        this.cor = cor;
+    public void setColor(String color) {
+        this.color = color;
     }
 
-    public String getAno() {
-        return ano;
+    public String getYear() {
+        return year;
     }
 
-    public void setAno(String ano) {
-        this.ano = ano;
+    public void setYear(String year) {
+        this.year = year;
     }
 
-    public String getTipo() {
-        return tipo;
+    public String getType() {
+        return type;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setType(String type) {
+        this.type = type;
     }
 
     public double getKmr() {

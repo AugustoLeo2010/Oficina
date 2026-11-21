@@ -6,23 +6,23 @@ import jakarta.persistence.*;
 public class Service {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String nome;
-    private String tipo;
-    private Double valor;
-    private String descricao;
+    private String name;
+    private String type;
+    private Double value;
+    private String description;
 
-    public Service(int id, String nome, String tipo, Double valor, String descricao){
+    public Service(int id, String name, String type, Double value, String description){
         this.id = id;
-        this.nome = nome;
-        this.tipo = tipo;
-        this.valor = valor;
-        this.descricao = descricao;
+        this.name = name;
+        this.type = type;
+        this.value = value;
+        this.description = description;
     }
-    public Service(String nome, String tipo, Double valor, String descricao){
-        this.nome = nome;
-        this.tipo = tipo;
-        this.valor = valor;
-        this.descricao = descricao;
+    public Service(String name, String type, Double value, String description){
+        this.name = name;
+        this.type = type;
+        this.value = value;
+        this.description = description;
     }
 
     public Service(){
@@ -36,35 +36,35 @@ public class Service {
         this.id = id;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getTipo() {
-        return tipo;
+    public String getType() {
+        return type;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setType(String type) {
+        this.type = type;
     }
 
-    public Double getValor() {
-        return valor;
+    public Double getValue() {
+        return value;
     }
 
-    public void setValor(Double valor) {
-        this.valor = valor;
+    public void setValue(Double value) {
+        this.value = value;
     }
 
-    public String getDescricao() {
-        return descricao;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
