@@ -1,4 +1,4 @@
 package _DT.Oficina.Controller;
 
-public class ServiceController {
+public class ServicesController {
 }

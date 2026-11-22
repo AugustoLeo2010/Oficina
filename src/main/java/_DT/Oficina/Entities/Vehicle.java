@@ -1,4 +1,4 @@
-package _DT.Oficina.entities;
+package _DT.Oficina.Entities;
 
 import jakarta.persistence.*;
 
@@ -7,24 +7,24 @@ public class Vehicle {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String model;
-    private String marca;
+    private String mark;
     private String color;
     private String year;
     private String type;
     private double kmr;
 
-    public Vehicle(int id, String model, String marca, String color, String year, String type, double kmr){
+    public Vehicle(int id, String model, String mark, String color, String year, String type, double kmr){
         this.id = id;
         this.model = model;
-        this.marca = marca;
+        this.mark = mark;
         this.color = color;
         this.year = year;
         this.type = type;
         this.kmr = kmr;
     }
-    public Vehicle(String model, String marca, String color, String year, String type, double kmr){
+    public Vehicle(String model, String mark, String color, String year, String type, double kmr){
         this.model = model;
-        this.marca = marca;
+        this.mark = mark;
         this.year = year;
         this.type = type;
         this.kmr = kmr;
@@ -49,12 +49,12 @@ public class Vehicle {
         this.model = model;
     }
 
-    public String getMarca() {
-        return marca;
+    public String getMark() {
+        return mark;
     }
 
-    public void setMarca(String marca) {
-        this.marca = marca;
+    public void setMark(String mark) {
+        this.mark = mark;
     }
 
     public String getColor() {

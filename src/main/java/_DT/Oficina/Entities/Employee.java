@@ -1,31 +1,34 @@
-package _DT.Oficina.entities;
+package _DT.Oficina.Entities;
 
 import jakarta.persistence.*;
 
 @Entity
-public class Client {
+public class Employee {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    private double wage;
     private String name;
     private String cpf;
     private String numberPhone;
     private String email;
 
-    public Client(int id, String name, String cpf, String numberPhone, String email){
+    public Employee(int id, int wage, String name, String cpf, String numberPhone, String email){
         this.id = id;
+        this.wage = wage;
         this.name = name;
         this.cpf = cpf;
         this.numberPhone = numberPhone;
         this.email = email;
     }
-    public Client(String name, String cpf, String numberPhone, String email){
+    public Employee(int wage, String name, String cpf, String numberPhone, String email){
+        this.wage = wage;
         this.name = name;
         this.cpf = cpf;
         this.numberPhone = numberPhone;
         this.email = email;
     }
 
-    public Client(){
+    public Employee(){
     }
 
     public int getId() {
@@ -34,6 +37,14 @@ public class Client {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public double getWage() {
+        return wage;
+    }
+
+    public void setWage(double wage) {
+        this.wage = wage;
     }
 
     public String getName() {

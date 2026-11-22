@@ -1,4 +1,8 @@
 package _DT.Oficina.Repository;
 
-public interface VehicleRepository {
+import _DT.Oficina.Entities.Vehicle;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface VehicleRepository extends JpaRepository<Vehicle, Integer> {
+
 }

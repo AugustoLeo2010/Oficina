@@ -1,9 +1,9 @@
-package _DT.Oficina.entities;
+package _DT.Oficina.Entities;
 
 import jakarta.persistence.*;
 
 @Entity
-public class Service {
+public class Services {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
@@ -11,21 +11,21 @@ public class Service {
     private Double value;
     private String description;
 
-    public Service(int id, String name, String type, Double value, String description){
+    public Services(int id, String name, String type, Double value, String description){
         this.id = id;
         this.name = name;
         this.type = type;
         this.value = value;
         this.description = description;
     }
-    public Service(String name, String type, Double value, String description){
+    public Services(String name, String type, Double value, String description){
         this.name = name;
         this.type = type;
         this.value = value;
         this.description = description;
     }
 
-    public Service(){
+    public Services(){
     }
 
     public int getId() {

@@ -1,9 +1,9 @@
-package _DT.Oficina.entities;
+package _DT.Oficina.Entities;
 
 import jakarta.persistence.*;
 
 @Entity
-public class ServiceOrder {
+public class Client {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
@@ -11,21 +11,21 @@ public class ServiceOrder {
     private String numberPhone;
     private String email;
 
-    public ServiceOrder(int id, String name, String cpf, String numberPhone, String email){
+    public Client(int id, String name, String cpf, String numberPhone, String email){
         this.id = id;
         this.name = name;
         this.cpf = cpf;
         this.numberPhone = numberPhone;
         this.email = email;
     }
-    public ServiceOrder(String name, String cpf, String numberPhone, String email){
+    public Client(String name, String cpf, String numberPhone, String email){
         this.name = name;
         this.cpf = cpf;
         this.numberPhone = numberPhone;
         this.email = email;
     }
 
-    public ServiceOrder(){
+    public Client(){
     }
 
     public int getId() {
