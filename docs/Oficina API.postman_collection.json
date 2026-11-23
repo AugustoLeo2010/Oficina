@@ -1,0 +1,926 @@
+{
+  "info": {
+    "_postman_id": "905b0e23-8ff3-4419-959a-d330e9fd1da7",
+    "name": "Oficina API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "60102335",
+    "_collection_link": "https://go.postman.co/collection/60102335-905b0e23-8ff3-4419-959a-d330e9fd1da7?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Vehicles",
+      "item": [
+        {
+          "name": "Post - Vehicles",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"model\": \"Civic\",\r\n  \"mark\": \"Honda\",\r\n  \"color\": \"Preto\",\r\n  \"year\": \"2022\",\r\n  \"type\": \"Sedan\",\r\n  \"kmr\": 35000.0\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/vehicles",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "vehicles"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "1 Get - Vehicles",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"model\": \"Civic\",\r\n  \"mark\": \"Honda\",\r\n  \"color\": \"Preto\",\r\n  \"year\": \"2022\",\r\n  \"type\": \"Sedan\",\r\n  \"kmr\": 35000.0\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/vehicles",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "vehicles"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "2 Get - Vehicles",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"model\": \"Civic\",\r\n  \"mark\": \"Honda\",\r\n  \"color\": \"Preto\",\r\n  \"year\": \"2022\",\r\n  \"type\": \"Sedan\",\r\n  \"kmr\": 35000.0\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/vehicles/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "vehicles",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Put - Vehicles",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"model\": \"Civic\",\r\n  \"mark\": \"Honda\",\r\n  \"color\": \"white\",\r\n  \"year\": \"2020\",\r\n  \"type\": \"Sedan\",\r\n  \"kmr\": 35000.0\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/vehicles/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "vehicles",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Del - Vehicles",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"model\": \"Civic\",\r\n  \"mark\": \"Honda\",\r\n  \"color\": \"white\",\r\n  \"year\": \"2020\",\r\n  \"type\": \"Sedan\",\r\n  \"kmr\": 35000.0\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/vehicles/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "vehicles",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Clients",
+      "item": [
+        {
+          "name": "Post - Clients",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"João Silva\",\r\n  \"cpf\": \"12345678900\",\r\n  \"numberPhone\": \"11999999999\",\r\n  \"email\": \"joao@email.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/clients",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "clients"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "1 Get - Clients",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"João Silva\",\r\n  \"cpf\": \"12345678900\",\r\n  \"numberPhone\": \"11999999999\",\r\n  \"email\": \"joao@email.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/clients",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "clients"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "2 Get - Clients",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"João Silva\",\r\n  \"cpf\": \"12345678900\",\r\n  \"numberPhone\": \"11999999999\",\r\n  \"email\": \"joao@email.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/clients/4",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "clients",
+                "4"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Put - Clients",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"João Silva\",\r\n  \"cpf\": \"12345678900\",\r\n  \"numberPhone\": \"000000000\",\r\n  \"email\": \"joao@email.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/clients/4",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "clients",
+                "4"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Del - Clients",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"João Silva\",\r\n  \"cpf\": \"12345678900\",\r\n  \"numberPhone\": \"000000000\",\r\n  \"email\": \"joao@email.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/clients/4",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "clients",
+                "4"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Services",
+      "item": [
+        {
+          "name": "Post - Services",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Troca de óleo\",\r\n  \"type\": \"Manutenção\",\r\n  \"value\": 150.0,\r\n  \"description\": \"Troca de óleo do motor\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/services",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "services"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "1 Get - Services",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Troca de óleo\",\r\n  \"type\": \"Manutenção\",\r\n  \"value\": 150.0,\r\n  \"description\": \"Troca de óleo do motor\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/services",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "services"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "2 Get - Services",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Troca de óleo\",\r\n  \"type\": \"Manutenção\",\r\n  \"value\": 150.0,\r\n  \"description\": \"Troca de óleo do motor\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/services/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "services",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Put - Services",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Troca de óleo\",\r\n  \"type\": \"Manutenção\",\r\n  \"value\": 100.0,\r\n  \"description\": \"Troca de óleo do motor\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/services/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "services",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Del - Services",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Troca de óleo\",\r\n  \"type\": \"Manutenção\",\r\n  \"value\": 100.0,\r\n  \"description\": \"Troca de óleo do motor\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/services/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "services",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Employees",
+      "item": [
+        {
+          "name": "Post - Employees",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Carlos Souza\",\r\n  \"wage\": 2500.0,\r\n  \"cpf\": \"98765432100\",\r\n  \"numberPhone\": \"11977777777\",\r\n  \"email\": \"carlos@email.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/employees",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "employees"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "1 Get - Employees",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Carlos Souza\",\r\n  \"wage\": 2500.0,\r\n  \"cpf\": \"98765432100\",\r\n  \"numberPhone\": \"11977777777\",\r\n  \"email\": \"carlos@email.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/employees",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "employees"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "2 Get - Employees",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Carlos Souza\",\r\n  \"wage\": 2500.0,\r\n  \"cpf\": \"98765432100\",\r\n  \"numberPhone\": \"11977777777\",\r\n  \"email\": \"carlos@email.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/employees/6",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "employees",
+                "6"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Put - Employees",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Carlos Souza\",\r\n  \"wage\": 2000.0,\r\n  \"cpf\": \"98765432100\",\r\n  \"numberPhone\": \"11977777777\",\r\n  \"email\": \"carlos@email.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/employees/6",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "employees",
+                "6"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Del - Employees",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Carlos Souza\",\r\n  \"wage\": 2000.0,\r\n  \"cpf\": \"98765432100\",\r\n  \"numberPhone\": \"11977777777\",\r\n  \"email\": \"carlos@email.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/employees/6",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "employees",
+                "6"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Appointments",
+      "item": [
+        {
+          "name": "Post - Appointment",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"João Silva\",\r\n  \"date\": \"2026-11-25\",\r\n  \"numberPhone\": \"11999999999\",\r\n  \"hours\": \"14:30\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/appointments",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "appointments"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "1 Get - Appointment",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"João Silva\",\r\n  \"date\": \"2026-11-25\",\r\n  \"numberPhone\": \"11999999999\",\r\n  \"hours\": \"14:30\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/appointments",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "appointments"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "2 Get - Appointment",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"João Silva\",\r\n  \"date\": \"2026-11-25\",\r\n  \"numberPhone\": \"11999999999\",\r\n  \"hours\": \"14:30\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/appointments/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "appointments",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Put - Appointment",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"João Silva\",\r\n  \"date\": \"2026-11-25\",\r\n  \"numberPhone\": \"11999999999\",\r\n  \"hours\": \"12:30\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/appointments/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "appointments",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Del - Appointment",
+          "protocolProfileBehavior": {
+            "disableCookies": false,
+            "followRedirects": true,
+            "protocolVersion": "auto",
+            "strictSSL": false
+          },
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"João Silva\",\r\n  \"date\": \"2026-11-25\",\r\n  \"numberPhone\": \"11999999999\",\r\n  \"hours\": \"12:30\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/appointments/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "appointments",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
