@@ -1,6 +1,8 @@
 package _DT.Oficina.Entities;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.*;
+
 
 @Entity
 public class Client {
@@ -11,12 +13,14 @@ public class Client {
     private String numberPhone;
     private String email;
 
+
     public Client(int id, String name, String cpf, String numberPhone, String email){
         this.id = id;
         this.name = name;
         this.cpf = cpf;
         this.numberPhone = numberPhone;
         this.email = email;
+
     }
     public Client(String name, String cpf, String numberPhone, String email){
         this.name = name;
@@ -67,4 +71,5 @@ public class Client {
     public void setEmail(String email) {
         this.email = email;
     }
+
 }

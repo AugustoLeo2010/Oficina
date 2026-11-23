@@ -25,8 +25,8 @@ public class ServicesService {
         return repository.findById(id);
     }
 
-    public Services save(Services Service) {
-        return repository.save(Service);
+    public Services save(Services services) {
+        return repository.save(services);
     }
 
     public Services update(int id, Services updatedData) {

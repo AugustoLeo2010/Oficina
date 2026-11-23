@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oficina | Sistema de Gestão</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Oficina <span>Manager</span></h1>
+    <p>Sistema de gerenciamento da oficina</p>
+</header>
+
+<main>
+    <section class="panel">
+        <div class="top">
+            <div>
+                <h2>Gerenciamento</h2>
+                <p>Cadastre, consulte, edite e exclua registros.</p>
+            </div>
+
+            <select id="entitySelect">
+                <option value="clients">Clientes</option>
+                <option value="employees">Funcionários</option>
+                <option value="vehicles">Veículos</option>
+                <option value="services">Serviços</option>
+                <option value="appointments">Agendamentos</option>
+            </select>
+        </div>
+
+        <div id="status"></div>
+
+        <section class="form-section">
+            <h3 id="formTitle">Cadastrar cliente</h3>
+
+            <form id="recordForm">
+                <div id="formFields" class="form-grid"></div>
+
+                <div class="form-actions">
+                    <button type="submit" id="saveButton">Cadastrar</button>
+                    <button type="button" id="cancelButton" class="secondary hidden">
+                        Cancelar edição
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <section class="table-section">
+            <div class="table-heading">
+                <h3 id="tableTitle">Clientes cadastrados</h3>
+                <button id="refreshButton" class="secondary">Atualizar lista</button>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead id="tableHead"></thead>
+                    <tbody id="tableBody"></tbody>
+                </table>
+            </div>
+        </section>
+    </section>
+</main>
+
+<footer>
+    <p>Oficina Manager © 2026</p>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>

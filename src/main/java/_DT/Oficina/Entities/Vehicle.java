@@ -25,6 +25,7 @@ public class Vehicle {
     public Vehicle(String model, String mark, String color, String year, String type, double kmr){
         this.model = model;
         this.mark = mark;
+        this.color = color;
         this.year = year;
         this.type = type;
         this.kmr = kmr;

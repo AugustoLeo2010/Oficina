@@ -12,7 +12,7 @@ public class Employee {
     private String numberPhone;
     private String email;
 
-    public Employee(int id, int wage, String name, String cpf, String numberPhone, String email){
+    public Employee(int id, double wage, String name, String cpf, String numberPhone, String email){
         this.id = id;
         this.wage = wage;
         this.name = name;
@@ -20,7 +20,7 @@ public class Employee {
         this.numberPhone = numberPhone;
         this.email = email;
     }
-    public Employee(int wage, String name, String cpf, String numberPhone, String email){
+    public Employee(double wage, String name, String cpf, String numberPhone, String email){
         this.wage = wage;
         this.name = name;
         this.cpf = cpf;
