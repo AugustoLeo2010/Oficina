@@ -56,15 +56,6 @@
           "request": {
             "method": "GET",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n  \"model\": \"Civic\",\r\n  \"mark\": \"Honda\",\r\n  \"color\": \"Preto\",\r\n  \"year\": \"2022\",\r\n  \"type\": \"Sedan\",\r\n  \"kmr\": 35000.0\r\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
             "url": {
               "raw": "http://localhost:8080/api/vehicles",
               "protocol": "http",
@@ -91,15 +82,6 @@
           "request": {
             "method": "GET",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n  \"model\": \"Civic\",\r\n  \"mark\": \"Honda\",\r\n  \"color\": \"Preto\",\r\n  \"year\": \"2022\",\r\n  \"type\": \"Sedan\",\r\n  \"kmr\": 35000.0\r\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
             "url": {
               "raw": "http://localhost:8080/api/vehicles/3",
               "protocol": "http",
@@ -163,15 +145,6 @@
           "request": {
             "method": "DELETE",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n  \"model\": \"Civic\",\r\n  \"mark\": \"Honda\",\r\n  \"color\": \"white\",\r\n  \"year\": \"2020\",\r\n  \"type\": \"Sedan\",\r\n  \"kmr\": 35000.0\r\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
             "url": {
               "raw": "http://localhost:8080/api/vehicles/3",
               "protocol": "http",
@@ -239,15 +212,6 @@
           "request": {
             "method": "GET",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n  \"name\": \"João Silva\",\r\n  \"cpf\": \"12345678900\",\r\n  \"numberPhone\": \"11999999999\",\r\n  \"email\": \"joao@email.com\"\r\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
             "url": {
               "raw": "http://localhost:8080/api/clients",
               "protocol": "http",
@@ -274,15 +238,6 @@
           "request": {
             "method": "GET",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n  \"name\": \"João Silva\",\r\n  \"cpf\": \"12345678900\",\r\n  \"numberPhone\": \"11999999999\",\r\n  \"email\": \"joao@email.com\"\r\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
             "url": {
               "raw": "http://localhost:8080/api/clients/4",
               "protocol": "http",
@@ -346,15 +301,6 @@
           "request": {
             "method": "DELETE",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n  \"name\": \"João Silva\",\r\n  \"cpf\": \"12345678900\",\r\n  \"numberPhone\": \"000000000\",\r\n  \"email\": \"joao@email.com\"\r\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
             "url": {
               "raw": "http://localhost:8080/api/clients/4",
               "protocol": "http",
@@ -422,15 +368,6 @@
           "request": {
             "method": "GET",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n  \"name\": \"Troca de óleo\",\r\n  \"type\": \"Manutenção\",\r\n  \"value\": 150.0,\r\n  \"description\": \"Troca de óleo do motor\"\r\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
             "url": {
               "raw": "http://localhost:8080/api/services",
               "protocol": "http",
@@ -457,15 +394,6 @@
           "request": {
             "method": "GET",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n  \"name\": \"Troca de óleo\",\r\n  \"type\": \"Manutenção\",\r\n  \"value\": 150.0,\r\n  \"description\": \"Troca de óleo do motor\"\r\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
             "url": {
               "raw": "http://localhost:8080/api/services/2",
               "protocol": "http",
@@ -529,15 +457,6 @@
           "request": {
             "method": "DELETE",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n  \"name\": \"Troca de óleo\",\r\n  \"type\": \"Manutenção\",\r\n  \"value\": 100.0,\r\n  \"description\": \"Troca de óleo do motor\"\r\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
             "url": {
               "raw": "http://localhost:8080/api/services/2",
               "protocol": "http",
@@ -605,15 +524,6 @@
           "request": {
             "method": "GET",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n  \"name\": \"Carlos Souza\",\r\n  \"wage\": 2500.0,\r\n  \"cpf\": \"98765432100\",\r\n  \"numberPhone\": \"11977777777\",\r\n  \"email\": \"carlos@email.com\"\r\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
             "url": {
               "raw": "http://localhost:8080/api/employees",
               "protocol": "http",
@@ -640,15 +550,6 @@
           "request": {
             "method": "GET",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n  \"name\": \"Carlos Souza\",\r\n  \"wage\": 2500.0,\r\n  \"cpf\": \"98765432100\",\r\n  \"numberPhone\": \"11977777777\",\r\n  \"email\": \"carlos@email.com\"\r\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
             "url": {
               "raw": "http://localhost:8080/api/employees/6",
               "protocol": "http",
@@ -712,15 +613,6 @@
           "request": {
             "method": "DELETE",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n  \"name\": \"Carlos Souza\",\r\n  \"wage\": 2000.0,\r\n  \"cpf\": \"98765432100\",\r\n  \"numberPhone\": \"11977777777\",\r\n  \"email\": \"carlos@email.com\"\r\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
             "url": {
               "raw": "http://localhost:8080/api/employees/6",
               "protocol": "http",
@@ -743,7 +635,7 @@
       "name": "Appointments",
       "item": [
         {
-          "name": "Post - Appointment",
+          "name": "Post - Appointments",
           "protocolProfileBehavior": {
             "disableCookies": false,
             "followRedirects": true,
@@ -778,7 +670,7 @@
           "response": []
         },
         {
-          "name": "1 Get - Appointment",
+          "name": "1 Get - Appointments",
           "protocolProfileBehavior": {
             "disableCookies": false,
             "followRedirects": true,
@@ -788,15 +680,6 @@
           "request": {
             "method": "GET",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n  \"name\": \"João Silva\",\r\n  \"date\": \"2026-11-25\",\r\n  \"numberPhone\": \"11999999999\",\r\n  \"hours\": \"14:30\"\r\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
             "url": {
               "raw": "http://localhost:8080/api/appointments",
               "protocol": "http",
@@ -813,7 +696,7 @@
           "response": []
         },
         {
-          "name": "2 Get - Appointment",
+          "name": "2 Get - Appointments",
           "protocolProfileBehavior": {
             "disableCookies": false,
             "followRedirects": true,
@@ -823,15 +706,6 @@
           "request": {
             "method": "GET",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n  \"name\": \"João Silva\",\r\n  \"date\": \"2026-11-25\",\r\n  \"numberPhone\": \"11999999999\",\r\n  \"hours\": \"14:30\"\r\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
             "url": {
               "raw": "http://localhost:8080/api/appointments/1",
               "protocol": "http",
@@ -849,7 +723,7 @@
           "response": []
         },
         {
-          "name": "Put - Appointment",
+          "name": "Put - Appointments",
           "protocolProfileBehavior": {
             "disableCookies": false,
             "followRedirects": true,
@@ -885,7 +759,7 @@
           "response": []
         },
         {
-          "name": "Del - Appointment",
+          "name": "Del - Appointments",
           "protocolProfileBehavior": {
             "disableCookies": false,
             "followRedirects": true,
@@ -895,15 +769,6 @@
           "request": {
             "method": "DELETE",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n  \"name\": \"João Silva\",\r\n  \"date\": \"2026-11-25\",\r\n  \"numberPhone\": \"11999999999\",\r\n  \"hours\": \"12:30\"\r\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
             "url": {
               "raw": "http://localhost:8080/api/appointments/1",
               "protocol": "http",
