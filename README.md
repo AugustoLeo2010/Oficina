@@ -1,34 +1,50 @@
-# Oficina Manager
+# Oficina Manager — API REST
 
-Sistema web de gerenciamento de uma oficina mecânica, desenvolvido para facilitar o controle de clientes, funcionários, veículos, serviços e agendamentos.
+Sistema de gerenciamento de oficinas mecânicas desenvolvido como projeto acadêmico, com uma API REST integrada a uma aplicação web e banco de dados MySQL.
 
 ## Sobre o projeto
 
-O projeto busca digitalizar o gerenciamento de uma oficina mecânica, substituindo controles manuais por uma aplicação integrada a um banco de dados.
+O Oficina Manager tem como objetivo facilitar o gerenciamento das atividades de uma oficina mecânica, centralizando informações de clientes, funcionários, veículos, serviços e agendamentos.
 
-**Público usuário:** funcionários e responsáveis pelo gerenciamento da oficina.
+O sistema permite cadastrar, consultar, atualizar e excluir registros por meio de uma interface web integrada à API.
+
+## Problema e público-alvo
+
+Oficinas mecânicas podem ter dificuldades para organizar informações de clientes, veículos, serviços e horários de atendimento.
+
+O projeto busca oferecer uma solução simples para centralizar esses dados e facilitar sua administração.
+
+**Público-alvo:** pequenas e médias oficinas mecânicas e seus funcionários responsáveis pelo gerenciamento.
 
 ## Funcionalidades
 
 - Cadastro, consulta, atualização e exclusão de clientes.
-- Cadastro, consulta, atualização e exclusão de funcionários.
-- Cadastro, consulta, atualização e exclusão de veículos.
-- Cadastro, consulta, atualização e exclusão de serviços.
-- Cadastro, consulta, atualização e exclusão de agendamentos.
-- Interface web integrada à API REST.
-- Armazenamento dos dados no MySQL.
+- Gerenciamento de funcionários.
+- Gerenciamento de veículos.
+- Cadastro e gerenciamento de serviços.
+- Controle de agendamentos.
+- Integração entre frontend, API REST e banco de dados.
+- Persistência dos dados no MySQL.
 
 ## Tecnologias utilizadas
 
+**Backend**
 - Java
 - Spring Boot
-- Spring Web MVC
+- Spring Web
 - Spring Data JPA
-- MySQL
+- Hibernate
+- Maven
+
+**Frontend**
 - HTML5
 - CSS3
 - JavaScript
-- Maven
+- Fetch API
+
+**Banco de dados e testes**
+- MySQL
+- MySQL Workbench
 - Postman
 - Git e GitHub
 
@@ -38,109 +54,85 @@ O projeto busca digitalizar o gerenciamento de uma oficina mecânica, substituin
 Oficina/
 ├── src/
 │   └── main/
-│       ├── java/_DT/Oficina/
-│       │   ├── Controller/
-│       │   ├── Entities/
-│       │   ├── Exception/
-│       │   ├── Repository/
-│       │   ├── Service/
-│       │   └── OficinaApplication.java
+│       ├── java/
+│       │   └── _DT/Oficina/
+│       │       ├── Controller/
+│       │       ├── Entities/
+│       │       ├── Repository/
+│       │       ├── Service/
+│       │       └── Exception/
 │       └── resources/
 │           ├── static/
 │           │   ├── index.html
 │           │   ├── styles.css
 │           │   └── scripts.js
 │           └── application.properties
+├── docs/
+│   ├── Oficina API.postman_collection.json
+│   └── database.sql
 ├── pom.xml
 └── README.md
 ```
 
-## Pré-requisitos
+## Banco de dados
 
-- JDK compatível com a versão Java configurada no projeto.
-- MySQL Server.
-- MySQL Workbench (opcional).
-- IntelliJ IDEA ou outra IDE compatível.
+O projeto utiliza o MySQL com um banco de dados chamado `oficina`.
 
-## Configuração do banco de dados
-
-1. Instale e inicie o MySQL Server.
-2. Crie o banco de dados:
+Para criar o banco, execute:
 
 ```sql
 CREATE DATABASE oficina;
 ```
 
-3. Configure as variáveis de ambiente:
+Em seguida, configure as credenciais de acesso nas variáveis de ambiente utilizadas pela aplicação.
 
-```text
-DB_URL=jdbc:mysql://localhost:3306/oficina
-DB_USERNAME=root
-DB_PASSWORD=sua_senha
-```
+O arquivo `docs/database.sql` contém a estrutura e os dados exportados do banco de dados.
 
-O Hibernate está configurado com `ddl-auto=update`, permitindo atualizar a estrutura das tabelas conforme as entidades da aplicação.
+### Entidades
 
-## Como executar
+| Entidade | Descrição |
+|---|---|
+| Client | Armazena informações dos clientes |
+| Employee | Armazena informações dos funcionários |
+| Vehicle | Armazena informações dos veículos |
+| Services | Armazena os serviços oferecidos |
+| Appointment | Armazena os agendamentos |
 
-1. Clone o repositório:
+## Como executar o projeto
+
+### Pré-requisitos
+
+- Java JDK compatível com o projeto.
+- MySQL instalado e em execução.
+- IntelliJ IDEA ou outra IDE compatível.
+- Git (opcional).
+
+### 1. Clonar o repositório
 
 ```bash
 git clone URL_DO_REPOSITORIO
 ```
 
-2. Abra o projeto na IDE.
-3. Configure as variáveis de ambiente do banco de dados.
-4. Aguarde o Maven baixar as dependências.
-5. Execute a classe `OficinaApplication`.
-6. Acesse a aplicação:
+Entre na pasta do projeto.
 
-```text
-http://localhost:8080
+### 2. Criar o banco de dados
+
+No MySQL, execute:
+
+```sql
+CREATE DATABASE oficina;
 ```
 
-## Endpoints da API
+### 3. Configurar as variáveis de ambiente
 
-Endereço base:
+Configure as seguintes variáveis no ambiente em que a aplicação será executada:
 
-```text
-http://localhost:8080/api
-```
-
-| Entidade | Endpoint |
+| Variável | Valor de exemplo |
 |---|---|
-| Clientes | `/clients` |
-| Funcionários | `/employees` |
-| Veículos | `/vehicles` |
-| Serviços | `/services` |
-| Agendamentos | `/appointments` |
+| DB_URL | jdbc:mysql://localhost:3306/oficina |
+| DB_USERNAME | root |
+| DB_PASSWORD | Sua senha do MySQL |
 
-Todas as entidades possuem as seguintes operações:
+A aplicação utiliza essas variáveis para estabelecer a conexão com o banco de dados.
 
-| Método HTTP | Rota | Operação |
-|---|---|---|
-| GET | `/recurso` | Listar registros |
-| GET | `/recurso/{id}` | Consultar por ID |
-| POST | `/recurso` | Cadastrar |
-| PUT | `/recurso/{id}` | Atualizar |
-| DELETE | `/recurso/{id}` | Excluir |
-
-As requisições de cadastro e atualização utilizam JSON.
-
-## Testes
-
-Os testes das operações CRUD foram realizados utilizando o Postman, verificando:
-
-- Cadastro de registros.
-- Listagem dos registros.
-- Consulta por identificador.
-- Atualização de informações.
-- Exclusão de registros.
-
-## Banco de dados
-
-O projeto utiliza MySQL para persistência dos dados, com entidades gerenciadas pelo Spring Data JPA e Hibernate.
-
-## Créditos
-
-Projeto acadêmico desenvolvido como atividade de integração entre API REST e aplicação Web.
+**Importante:** não compartilhe ou envie senhas reais para o GitHub
