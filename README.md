@@ -135,4 +135,14 @@ Configure as seguintes variáveis no ambiente em que a aplicação será executa
 
 A aplicação utiliza essas variáveis para estabelecer a conexão com o banco de dados.
 
+### 4. Importar estrutura e dados iniciais (opcional)
+Caso queira popular o banco com tabelas e registros de exemplo, execute o script SQL disponível em `docs/database.sql` no MySQL Workbench ou via terminal.
+
+### 5. Executar a aplicação
+Pela sua IDE (IntelliJ IDEA), abra o projeto, aguarde o Maven baixar as dependências e execute a classe principal da aplicação Spring Boot. 
+
+Se preferir rodar pelo terminal na raiz do projeto:
+```bash
+./mvnw spring-boot:run
+
 **Importante:** não compartilhe ou envie senhas reais para o GitHub
